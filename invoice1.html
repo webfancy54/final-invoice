@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <style>
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+            border-collapse: collapse;
+        }
+
+        .table td,
+        .table th {
+            padding: .75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6
+        }
+
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+            text-align: left;
+        }
+
+        .table tbody+tbody {
+            border-top: 2px solid #dee2e6
+        }
+
+        .table .table {
+            background-color: #fff
+        }
+
+
+        .table-bordered {
+            border: 1px solid #dee2e6
+        }
+
+        .table-bordered td,
+        .table-bordered th {
+            border: 1px solid #dee2e6
+        }
+
+        .table-bordered thead td,
+        .table-bordered thead th {
+            border-bottom-width: 2px
+        }
+        * {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 796px;
+    margin: auto;
+    display:block;
+}
+.width-100{
+    width: 100%;
+    display: block;
+}
+.width-5{
+    width: 49%;
+    display: inline-block;
+}
+.cstm{
+    position: relative;
+    top: -60px;
+}
+.m20{
+    margin-top: 20px;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+p{
+    text-transform: capitalize;
+    line-height: 1.5em;
+}
+h2,h3,h4,h5,h6{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+h1{
+    font-weight: 500;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+h4.text-uppercase{
+    font-size: 20px;
+    padding: 7px
+}
+.position p{
+    display: inline-block;
+}
+.position-r{
+    position: relative;
+}
+.total-wrap{
+    position: relative;
+    padding-bottom: 110px;
+}
+.position{
+    position: absolute;
+    right: 48px;
+    top: 0px;
+}
+.tax-s{
+        position: relative;
+    left: -4px;
+}
+.p-1{
+    padding-right: 35px;
+}
+.p-2{
+    padding-right: 19px;
+}
+.p-3{
+    padding-right: 21px;
+}
+.p-4{
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.float{
+    float: right;
+    text-align: right;
+}
+.d-block{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.text-capitalize{
+    text-transform: capitalize;
+}
+.font-bold{
+    font-size: 28px;
+}
+.text-center{
+    text-align: center;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="width-5 cstm" style="margin-right: 1%">
+            <h2>[Company Name]</h2>
+            <h3>[Company Slogan]</h3>
+            <h4>[Web Address]</h4>
+        </div>
+        <div class="width-5">
+            <h1>invoice</h1>
+            <p>date: 01/01/2020</p>
+            <p>invoice# 1919</p>
+            <p>invoice# 1919</p>
+            customer <span class="text-uppercase">id</span>
+        </div>
+        <div class="width-100">
+            <p>[Stress Address]</p>
+            <p>[City, ST, ZIP]</p>
+            <p>Phone:[0000000000]</p>
+            <p>Fax:[0000000000]</p>
+        </div>
+        <div style="margin-top: 20px">
+            <div class="width-5">
+                <div style="width: 85%">
+                    <h4 class="text-uppercase" style="background: #3B4E87; color:#fff">bill to</h4>
+                    <p>[Name]</p>
+                    <p>[Company Name]</p>
+                    <p>[Stress Address]</p>
+                    <p>[City, ST, ZIP]</p>
+                    <p>Phone:[0000000000]</p>
+                </div>
+            </div>
+            <div class="width-5">
+                <div style="width: 85%">
+                    <h4 class="text-uppercase" style="background:  #3B4E87; color:#fff">ship to</h4>
+                    <p>[Name]</p>
+                    <p>[Company Name]</p>
+                    <p>[Stress Address]</p>
+                    <p>[City, ST, ZIP]</p>
+                    <p>Phone:[0000000000]</p>
+                </div>
+            </div>
+        </div>
+        <div class=" m20">
+            <table class="table table-bordered">
+                <thead class="thead-2 text-uppercase">
+                    <tr>
+                        <th>salesperson</th>
+                        <th>PO#</th>
+                        <th>SHIP Date</th>
+                        <th>SHIP VIA</th>
+                        <th>F.O.B.</th>
+                        <th>Terms</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="info-table m20">
+            <table class="table table-bordered">
+                <thead class="thead-2">
+                    <tr>
+                        <th>Items#</th>
+                        <th>Description</th>
+                        <th>QTY</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00৳</td>
+                        <td>1.00৳</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00৳</td>
+                        <td>1.00৳</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00৳</td>
+                        <td>1.00৳</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00৳</td>
+                        <td>1.00৳</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00৳</td>
+                        <td>1.00৳</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00৳</td>
+                        <td>1.00৳</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00৳</td>
+                        <td>1.00৳</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="total-wrap">
+            <div class="position-r">
+                <h5>Other Comment or spacial instruction</h5>
+                <p>1. Lorem ipsum dolor.</p>
+                <p>2. Lorem ipsum dolor.</p>
+            </div>
+            <div class="position">
+                <p>Subtotal</p>
+                <span>: 0.00৳</span><br>
+                <p>Tax Rate</p>
+                <span class="tax-s">: 0.00%</span><br>
+                <p class="p-1">Tax</p>
+                <span>: 0.00৳</span><br>
+                <p class="p-2">S & H</p>
+                <span>: 0.00৳</span><br>
+                <p class="p-3">Other</p>
+                <span>: 0.00৳</span><br>
+                <hr>
+                <p class="p-4">TOTAL</p>
+                <span>: 0.00৳</span>
+            </div>
+        </div>
+        <div class="d-block">
+            <div class="float">
+            <p class="text-capitalize">make all cheaks payable to</p>
+            <p class="text-capitalize">[your company name]</p>
+        </div>
+        </div>
+        <div class="description">
+            <p class="text-capitalize text-center">if you have any questions about this invoice, pease contact</p>
+            <p class="text-capitalize text-center">[ name, phone#, e-mail ]</p>
+            <h4 class="font-bold text-capitalize text-center"><em>thank you for your busniess !</em></h4>
+        </div>
+    </div>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+<!--<div class="main-bg container pt-4">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h3>[Company Name]</h3>
+                <h4>[Company Slogan]</h4>
+                <h6>[web Address]</h6>
+                <div class="pt-4">
+                    <p>[Stress Address]</p>
+                    <p>[City, ST, ZIP]</p>
+                    <p>Phone:[0000000000]</p>
+                    <p>Fax:[0000000000]</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <h2 class="display-4 text-uppercase font-bold text-left" style="color: #B1B8CF">invoice</h2>
+                <p class="pt-2">Date: <span style="background: #d8d8d9;">10/10/2020</span></p>
+                <p>INVOICE# 1919</p>
+                <p>Customer ID# 11729</p>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-md-4 col-12 mr-md-4">
+                <h4 class="text-uppercase" style="background: #3B4E87; color:#fff">bill to</h4>
+                <p>[Nmae]</p>
+                <p>[Company Name]</p>
+                <p>[Stress Address]</p>
+                <p>[City, ST, ZIP]</p>
+                <p>Phone:[0000000000]</p>
+            </div>
+            <div class="col-md-4 col-12 ml-md-4">
+                <h4 class="text-uppercase" style="background:  #3B4E87; color:#fff">ship to</h4>
+                <p>[Nmae]</p>
+                <p>[Company Name]</p>
+                <p>[Stress Address]</p>
+                <p>[City, ST, ZIP]</p>
+                <p>Phone:[0000000000]</p>
+            </div>
+        </div>
+        <div class="tbl pt-4">
+            <table class="table table-bordered">
+                <thead class="thead-2">
+                    <tr>
+                        <th>Lorem Text</th>
+                        <th>PO#</th>
+                        <th>SHIP Date</th>
+                        <th>SHIP VIA</th>
+                        <th>F.O.B.</th>
+                        <th>Terms</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                        <td>Lorem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tbl-2">
+            <table class="table table-bordered">
+                <thead class="thead-2">
+                    <tr>
+                        <th>Items#</th>
+                        <th>Description</th>
+                        <th>QTY</th>
+                        <th>Unit Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00$</td>
+                        <td>1.00$</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00$</td>
+                        <td>1.00$</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00$</td>
+                        <td>1.00$</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00$</td>
+                        <td>1.00$</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00$</td>
+                        <td>1.00$</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00$</td>
+                        <td>1.00$</td>
+                    </tr>
+                    <tr>
+                        <td>Demo</td>
+                        <td>Demo</td>
+                        <td>1</td>
+                        <td>1.00$</td>
+                        <td>1.00$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-7 mr-4">
+                <div class="w-full">
+                    <h5>Other Comment or spacial instruction</h5>
+                    <p>1. Lorem ipsum dolor.</p>
+                    <p>2. Lorem ipsum dolor.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <table class="table tbl-9">
+                    <tbody>
+                        <tr>
+                            <th>Subtotal:</th>
+                            <td class="text-center"> 0.00$</td>
+                        </tr>
+                        <tr>
+                            <th>Tax Rate:</th>
+                            <td class="text-center"> 0.00%</td>
+                        </tr>
+                        <tr>
+                            <th>Tax:</th>
+                            <td class="text-center"> 0.00$</td>
+                        </tr>
+                        <tr>
+                            <th>S & H:</th>
+                            <td class="text-center"> 0.00$</td>
+                        </tr>
+                        <tr>
+                            <th>Other</th>
+                            <td class="text-center"> 0.00$</td>
+                        </tr>
+                        <tr>
+                            <th class="tbl-9e">TOTAL:</th>
+                            <th class="text-center tbl-9e"> 0.00$</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-f">
+                    <p class="text-capitalize">make all cheaks payable to</p>
+                    <p class="text-capitalize font-bold">[your company name]</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-4 mt-3 pb-3">
+            <p class="text-capitalize">if you have any questions about this invoice, pease contact</p>
+            <p class="text-capitalize">[name, phone#, e-mail]</p>
+            <h4 class="font-bold text-capitalize"><em>thank you for your busniess</em></h4>
+        </div>
+    </div>-->
